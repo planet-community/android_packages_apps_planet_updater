@@ -3,7 +3,7 @@ plugins {
 }
 
 ext {
-    IS_STUDIO = true
+    IS_STUDIO = false
 }
 
 android {
