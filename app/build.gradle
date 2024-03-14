@@ -8,12 +8,12 @@ ext {
 
 android {
     namespace 'co.uk.planetcom.apps.phones.android.ota'
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         applicationId "co.uk.planetcom.apps.phones.android.ota"
-        minSdk 24
-        targetSdk 32
+        minSdk 27
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
