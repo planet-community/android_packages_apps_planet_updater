@@ -2,6 +2,10 @@ plugins {
     id 'com.android.application'
 }
 
+ext {
+    IS_STUDIO = true
+}
+
 android {
     namespace 'co.uk.planetcom.apps.phones.android.ota'
     compileSdk 32
@@ -41,4 +45,8 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    if (IS_STUDIO) {
+      implementation files("./libs-sdk/SDK/26/android.jar")
+    }
 }
