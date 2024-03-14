@@ -8,11 +8,12 @@
     androidSdkPackages.platform-tools
     androidSdkPackages.platforms-android-34
     androidStudioPackages.stable
-    jdk11
   ];
 
   languages.nix.enable = true;
-  languages.java.enable = true;
-
-  pre-commit.hooks.shellcheck.enable = true;
+  languages.java = {
+    enable = true;
+    jdk = pkgs.jdk17;
+    gradle.enable = true;
+  };
 }
