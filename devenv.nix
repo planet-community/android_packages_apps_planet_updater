@@ -15,7 +15,6 @@
     nix.enable = true;
     java = {
       enable = true;
-      jdk = pkgs.openjdk17;
       gradle.enable = true;
     };
   };
