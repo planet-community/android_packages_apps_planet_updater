@@ -3,7 +3,7 @@ plugins {
 }
 
 ext {
-    IS_STUDIO = false
+    IS_OUTSIDE_BSP = false
 }
 
 android {
@@ -46,7 +46,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    if (IS_STUDIO) {
+    if (IS_OUTSIDE_BSP) {
       implementation files("./libs-sdk/SDK/26/android.jar")
     }
 }
