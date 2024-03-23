@@ -1,0 +1,11 @@
+---
+name: CI tests (meta)
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test-nix:
+    uses: ./.github/workflows/ci-tests-nix.yml
+    secrets: inherit
