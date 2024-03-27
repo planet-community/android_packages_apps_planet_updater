@@ -1,0 +1,42 @@
+---
+name: CI - Android
+
+on:
+  workflow_call:
+
+env:
+  IS_OUTSIDE_BSP: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'zulu'
+        cache: gradle
+    - run: ./gradlew build
+
+  assembleDebug:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'zulu'
+        cache: gradle
+    - run: ./gradlew assembleDebug
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'zulu'
+        cache: gradle
+    - run: ./gradlew test

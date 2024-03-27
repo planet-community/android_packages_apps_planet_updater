@@ -9,3 +9,7 @@ jobs:
   test-nix:
     uses: ./.github/workflows/ci-tests-nix.yml
     secrets: inherit
+
+  test-android:
+    uses: ./.github/workflows/ci-tests-android.yml
+    secrets: inherit

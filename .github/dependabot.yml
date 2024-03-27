@@ -1,15 +1,25 @@
 version: 2
 updates:
-  - package-ecosystem: gradle
+  - package-ecosystem: "gradle"
     directory: "/"
     schedule:
       interval: "weekly"
+      time: "06:00"
     commit-message:
       prefix: "chore(deps)"
+    groups:
+      android-deps:
+        patterns:
+          - "*"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+      time: "06:00"
     commit-message:
-      prefix: "chore(ci)"
+      prefix: "chore(ci-deps)"
+    groups:
+      gh-actions-deps:
+        patterns:
+          - "*"
