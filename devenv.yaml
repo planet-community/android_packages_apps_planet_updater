@@ -3,6 +3,6 @@ inputs:
   nixpkgs:
     url: github:NixOS/nixpkgs/nixpkgs-unstable
   android-nixpkgs:
-    url: github:tadfisher/android-nixpkgs
+    url: github:tadfisher/android-nixpkgs/stable
     overlays:
       - default

@@ -14,7 +14,9 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: '17'
-        distribution: 'temurin'
+        distribution: 'zulu'
         cache: gradle
     - name: Build with Gradle
       run: ./gradlew build
+      env:
+        IS_OUTSIDE_BSP: true

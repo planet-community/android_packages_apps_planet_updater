@@ -13,7 +13,7 @@ android {
     defaultConfig {
         applicationId "co.uk.planetcom.apps.phones.android.ota"
         minSdk 27
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -46,7 +46,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    if (IS_OUTSIDE_BSP) {
-      implementation files("./libs-sdk/SDK/26/android.jar")
-    }
+    if (IS_OUTSIDE_BSP || (System.getenv("IS_OUTSIDE_BSP") != null && System.getenv('IS_OUTSIDE_BSP')))
+      implementation files("./libs-sdk/SDK/27/android.jar")
 }
