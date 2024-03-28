@@ -10,6 +10,11 @@ jobs:
     uses: ./.github/workflows/ci-tests-nix.yml
     secrets: inherit
 
+  test-codeql:
+    uses: ./.github/workflows/ci-tests-codeql.yml
+    secrets: inherit
+
   test-android:
+    needs: [test-codeql]
     uses: ./.github/workflows/ci-tests-android.yml
     secrets: inherit
