@@ -3,6 +3,6 @@ Upstream-Name: android_packages_apps_planetupdater
 Upstream-Contact: Dom Rodriguez (shymega) <shymega@shymega.org.uk>
 Source: 
 
-Files: app/src/main/res/*.webp gradle* 
+Files: app/src/main/res/*.webp gradle.properties
 Copyright: 2024 Dom Rodriguez (shymega) <shymega@shymega.org.uk
 License: Apache-2.0
