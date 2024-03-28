@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2024 Dom Rodriguez <shymega@shymega.org.uk>;5D
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 <resources>
     <string name="app_name">Planet OTA</string>
 </resources>

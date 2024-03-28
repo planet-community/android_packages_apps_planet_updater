@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2024 Dom Rodriguez <shymega@shymega.org.uk>;5D
+#
+# SPDX-License-Identifier: Apache-2.0
+
 # Add project specific ProGuard rules here.
 # You can control the set of applied configuration files using the
 # proguardFiles setting in build.gradle.
