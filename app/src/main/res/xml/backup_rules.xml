@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?><!--
 
-<!--
 SPDX-FileCopyrightText: 2024 Dom Rodriguez <shymega@shymega.org.uk>;5D
 
 SPDX-License-Identifier: Apache-2.0
--->
 
 Sample backup rules file; uncomment and customize as necessary.
    See https://developer.android.com/guide/topics/data/autobackup
