@@ -20,7 +20,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'zulu'
-        cache: gradle
+        cache: 'gradle'
     - run: ./gradlew build
 
   assembleDebug:
@@ -31,7 +31,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'zulu'
-        cache: gradle
+        cache: 'gradle'
     - run: ./gradlew assembleDebug
 
   test:
@@ -42,5 +42,5 @@ jobs:
       with:
         java-version: '17'
         distribution: 'zulu'
-        cache: gradle
+        cache: 'gradle'
     - run: ./gradlew test

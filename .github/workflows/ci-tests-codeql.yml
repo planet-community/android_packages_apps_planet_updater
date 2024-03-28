@@ -26,7 +26,7 @@ jobs:
       matrix:
         include:
         - language: java-kotlin
-          build-mode: none 
+          build-mode: none
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -35,7 +35,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'zulu'
-        cache: gradle
+        cache: 'gradle'
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
