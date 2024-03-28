@@ -7,6 +7,9 @@ name: CI tests (meta)
 
 on:
   push:
+    paths: ["app/**", "*gradle*", "devenv.*"]
+  pull_request:
+    paths: ["app/**", "*gradle*", "devenv.*"]
   workflow_dispatch:
 
 jobs:
