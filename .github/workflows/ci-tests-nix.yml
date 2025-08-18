@@ -13,7 +13,7 @@ jobs:
     name: Nix CI tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: cachix/install-nix-action@v31
       - run: nix profile install --accept-flake-config nixpkgs#devenv
       - run: devenv test
